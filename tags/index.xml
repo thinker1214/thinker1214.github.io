@@ -13,20 +13,11 @@
     
     
     <item>
-      <title>tag1</title>
-      <link>/tags/tag1/</link>
+      <title>hugo</title>
+      <link>/tags/hugo/</link>
       <pubDate>Fri, 10 Jan 2020 21:27:33 +0800</pubDate>
       
-      <guid>/tags/tag1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tag2</title>
-      <link>/tags/tag2/</link>
-      <pubDate>Fri, 10 Jan 2020 21:27:33 +0800</pubDate>
-      
-      <guid>/tags/tag2/</guid>
+      <guid>/tags/hugo/</guid>
       <description></description>
     </item>
     

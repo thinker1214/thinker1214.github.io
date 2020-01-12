@@ -5,34 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>
-归档
+hugo&#43;GitHub page 搭建个人博客的使用教程
 </title>
 
     
 
 
   
-  <meta name="author" content="Thinker" />
-  <meta name="description" content="所有文章的归档。" />
+  <meta name="author" content="IrvingBei" />
+  <meta name="description" content="hugo&#43;GitHub page 搭建个人博客的使用教程。
+" />
 
 
 
 <meta name="generator" content="Hugo 0.62.2" />
 
-<link rel="canonical" href="/posts/" />
+<link rel="canonical" href="/posts/%E6%95%99%E7%A8%8B/" />
 
 
-<meta property="og:title" content="归档" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/posts/" />
-<meta property="og:updated_time" content="2020-01-10T21:27:33+08:00" />
+<meta property="og:title" content="hugo&#43;GitHub page 搭建个人博客的使用教程" />
+<meta property="og:description" content="hugo&#43;GitHub page 搭建个人博客的使用教程。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/%E6%95%99%E7%A8%8B/" />
+<meta property="article:published_time" content="2020-01-10T21:27:33+08:00" />
+<meta property="article:modified_time" content="2020-01-10T21:27:33+08:00" />
 
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="归档"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="hugo&#43;GitHub page 搭建个人博客的使用教程"/>
+<meta name="twitter:description" content="hugo&#43;GitHub page 搭建个人博客的使用教程。"/>
 
 
 <link rel="stylesheet" href="/css/github-markdown.css" />
@@ -80,6 +82,92 @@
 
           
 <div class="ui centered relaxed grid dream-grid">
+  <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single">
+
+    <section class="ui top attached segment" id="dream-save-post-as-img">
+      <header style="margin-top: 0 !important;">
+        <h2 class="ui header">
+          hugo&#43;GitHub page 搭建个人博客的使用教程
+          <div class="sub header">@ IrvingBei · Friday, Jan 10, 2020 · 2 minute read · Update at Jan 10, 2020</div>
+        </h2>
+      </header>
+      <article style="margin-top: 2rem;"><p>hugo+GitHub page 搭建个人博客的使用教程。</p>
+<h3 id="初始环境配置">初始环境配置</h3>
+<h4 id="1hugo插件安装">1、hugo插件安装</h4>
+<p>（1）在<a href="https://github.com/gohugoio/hugo/releases">hugo下载</a>中下载对应操作系统版本的hugo软件到本地，解压；</p>
+<p>（2）将解压后的路径添加进环境变量；</p>
+<p>（3）在要保存博客文件的目录下打开命令行，执行 ：</p>
+<pre><code>hugo new dreamblog
+</code></pre><p>dreamblog就是生成的博客根目录
+（4）测试该博客是否成功生成，继续命令行执行</p>
+<pre><code>hugo server 
+</code></pre><p>浏览器打开localhost:1313/，如果显示博客内容，则说明成功。
+（5）从github上下载<a href="https://github.com/thinker1214/dreamblog_source">博客完整源代码</a>，替换以下标红文件
+<img src="https://raw.githubusercontent.com/xiongzongyang/hexo_photo/master/0618/20200112195730.png" alt="需要替换的文件"></p>
+<h4 id="2github配置这里使用桌面版">2、github配置（这里使用桌面版）</h4>
+<p>（1）下载<a href="https://desktop.github.com/">GitHub桌面版软件</a>，安装，登录账号；
+（2）克隆项目到本地
+<img src="https://raw.githubusercontent.com/xiongzongyang/hexo_photo/master/0618/20200112195959.png" alt="克隆到本地1">
+<img src="https://raw.githubusercontent.com/xiongzongyang/hexo_photo/master/0618/20200112200111.png" alt="2"></p>
+<p>记住这个目录</p>
+<h1 id="thinker1214githubio">thinker1214.github.io</h1>
+<p>后面生成的html文件就放在这个里面。</p>
+<hr>
+<h3 id="写博文上传到github服务器">写博文、上传到github服务器</h3>
+<h4 id="1准备博文">1、准备博文</h4>
+<p>在下面的路径中创建后缀为md的文件即可，
+<img src="https://raw.githubusercontent.com/xiongzongyang/hexo_photo/master/0618/20200112200416.png" alt="">
+文件内容的开始格式为：</p>
+<pre><code>---
+title: 【hugo+GitHub page 搭建个人博客的使用教程】
+date: 【2020-01-10T21:27:33+08:00】
+lastmod: 【2020-01-10T21:27:33+08:00】
+author: 【IrvingBei】
+categories:【 [&quot;教程&quot;]】
+tags:【 [&quot;hugo&quot;]】
+---
+【这里是一篇博文的摘要，一般是正文的开始50个字】
+&lt;!--more--&gt;
+【这里是一篇文章的正文】
+</code></pre><p>上面格式中【】部分进行修改即可。</p>
+<h4 id="2生成html文件">2、生成html文件</h4>
+<p>在博客主目录下执行命令行，输入hugo即可：
+<img src="https://raw.githubusercontent.com/xiongzongyang/hexo_photo/master/0618/20200112201110.png" alt=""></p>
+<h4 id="3上传生成的静态文件">3、上传生成的静态文件</h4>
+<p>（1）打开github 桌面版软件，左上角选择thinker1214.github.io仓库，按照下面操作，
+<img src="https://raw.githubusercontent.com/xiongzongyang/hexo_photo/master/0618/20200112202236.png" alt=""></p>
+<p>先让服务端和本地同步
+<img src="https://raw.githubusercontent.com/xiongzongyang/hexo_photo/master/0618/20200112202339.png" alt=""></p>
+<p>（2）执行完上一步后，进入dreamblog下的public目录，复制public下的所有文件到thinker1214.github.io目录下，全部替换。</p>
+<p>此时github软件里会显示修改的文件，选择所有修改文件，填写修改记录
+<img src="https://raw.githubusercontent.com/xiongzongyang/hexo_photo/master/0618/20200112202410.png" alt=""></p>
+<p>点击，上传到github即可。
+<img src="https://raw.githubusercontent.com/xiongzongyang/hexo_photo/master/0618/20200112202629.png" alt=""></p></article>
+    </section>
+
+    <footer class="ui attached segment dream-tags">
+      
+        
+          <a class="ui label" href="/tags/hugo" title="hugo">hugo</a>
+        
+      
+      <div
+        class="ui label"
+        style="float: right; background: #1b1c1d !important; cursor: pointer;"
+        onclick="savePostAsImg()">
+        <i class="save icon"></i> Save as image
+      </div>
+    </footer>
+
+    
+      <footer class="ui attached segment">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+      </footer>
+    
+
+    
+
+  </div>
   <div class="sixteen wide mobile sixteen wide tablet four wide computer column">
     <article class="dream-header">
   <section class="ui top attached center aligned segment">
@@ -147,27 +235,6 @@
   </section>
 </article>
 
-  </div>
-  <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column">
-    <div class="ui segment dream-posts-section">
-      <h2 class="ui header">
-        归档
-        <div class="ui grey sub header"><p>所有文章的归档。</p>
-</div>
-      </h2>
-
-      
-        <h3 class="ui header">2020</h3>
-        <ul>
-          
-            <li>
-              <a href="/posts/%E6%95%99%E7%A8%8B/">hugo&#43;GitHub page 搭建个人博客的使用教程</a>
-            </li>
-          
-        </ul>
-      
-
-    </div>
   </div>
 </div>
 
@@ -264,7 +331,6 @@
 
   
   
-
 </div>
 
         </section>
